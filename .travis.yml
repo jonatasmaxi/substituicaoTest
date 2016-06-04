@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - oraclejdk7
+  
+before_script:
+  - mysql -e 'create database prosub;'
+  - "chmod +x ./build.sh"
+  
+script: "./build.sh"
