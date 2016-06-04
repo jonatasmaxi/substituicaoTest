@@ -29,7 +29,9 @@ for i in * ; do
     echo " "
     echo "----- $i -----"
 	echo "OIOI glas"
+	$TARGET
     ant -Dj2ee.server.home="$_PWD\glassfish3\glassfish" $TARGET
+	echo $TARGET
     RET=$?
     if [ ! "$RET" = "0" ]; then
 		echo "linha estrranha"
