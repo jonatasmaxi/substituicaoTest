@@ -18,14 +18,17 @@ for i in * ; do
     cd "$i"
 
     if [ -f "manifest.mf" ]; then
+		echo "OIOI"
         TARGET=jar
     else
+		echo "OIOI"
         TARGET=dist
     fi
     TARGET=""
 
     echo " "
     echo "----- $i -----"
+	echo "OIOI"
     ant -Dj2ee.server.home="$_PWD\glassfish3\glassfish" $TARGET
     RET=$?
     if [ ! "$RET" = "0" ]; then
