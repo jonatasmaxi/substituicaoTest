@@ -32,9 +32,11 @@ for i in * ; do
     ant -Dj2ee.server.home="$_PWD\glassfish3\glassfish" $TARGET
     RET=$?
     if [ ! "$RET" = "0" ]; then
+		echo "linha estrranha"
         exit $RET
     fi
     echo " "
+	echo "linha estrranha fim do documento"
     cd ..
   fi
 done
