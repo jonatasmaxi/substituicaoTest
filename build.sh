@@ -18,27 +18,22 @@ for i in * ; do
     cd "$i"
 
     if [ -f "manifest.mf" ]; then
-		echo "OIOI jar"
         TARGET=jar
     else
-		echo "OIOI dist "
         TARGET=dist
     fi
     TARGET=""
 
     echo " "
     echo "----- $i -----"
-	echo "OIOI glas"
 	$TARGET
     ant -Dj2ee.server.home="$_PWD\glassfish3\glassfish" $TARGET
-	echo $TARGET
     RET=$?
     if [ ! "$RET" = "0" ]; then
-		echo "linha estrranha"
         exit $RET
     fi
     echo " "
-	echo "linha estrranha fim do documento"
+	echo 
     //cd ..
 	
   fi
