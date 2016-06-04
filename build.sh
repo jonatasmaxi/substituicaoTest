@@ -18,10 +18,10 @@ for i in * ; do
     cd "$i"
 
     if [ -f "manifest.mf" ]; then
-		echo "OIOI"
+		echo "OIOI jar"
         TARGET=jar
     else
-		echo "OIOI"
+		echo "OIOI dist "
         TARGET=dist
     fi
     TARGET=""
