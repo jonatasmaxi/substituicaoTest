@@ -37,6 +37,7 @@ for i in * ; do
     fi
     echo " "
 	echo "linha estrranha fim do documento"
-    cd ..
+    //cd ..
+	
   fi
 done
